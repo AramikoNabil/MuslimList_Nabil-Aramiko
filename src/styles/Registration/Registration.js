@@ -25,7 +25,7 @@ export const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   fontEmail: {
-    marginTop: 40,
+    marginTop: 25,
   },
   fontInput: {
     backgroundColor: 'white',
@@ -129,5 +129,11 @@ export const styles = StyleSheet.create({
   },
   textSignUp: {
     color: '#36589E',
+  },
+  fontTermofuse: {
+    textAlign: 'center',
+    fontSize: 12,
+    color: '#B0B0B0',
+    marginTop: 25,
   },
 });

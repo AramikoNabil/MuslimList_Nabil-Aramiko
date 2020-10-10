@@ -1,5 +1,4 @@
 import React from 'react';
-import 'react-native-gesture-handler';
 import {createStackNavigator} from '@react-navigation/stack';
 import {NavigationContainer} from '@react-navigation/native';
 import SplashScreen from '../screen/SplashScreen';
@@ -7,8 +6,11 @@ import GetStarted from '../screen/GetStarted';
 import Login from '../screen/Login';
 import ResetPassword from '../screen/ResetPassword';
 import Registration from '../screen/Registration';
+import Homepage from '../screen/Homepage';
+import RootDrawer from '../screen/DrawerContents';
 
 const Stack = createStackNavigator();
+
 class firstStack extends React.Component {
   render() {
     return (
@@ -29,7 +31,6 @@ class firstStack extends React.Component {
             component={Login}
             options={{headerShown: false}}
           />
-
           <Stack.Screen
             name="ResetPassword"
             component={ResetPassword}
@@ -38,6 +39,16 @@ class firstStack extends React.Component {
           <Stack.Screen
             name="Registration"
             component={Registration}
+            options={{headerShown: false}}
+          />
+          <Stack.Screen
+            name="Homepage"
+            component={Homepage}
+            options={{headerShown: false}}
+          />
+          <Stack.Screen
+            name="RootDrawer"
+            component={RootDrawer}
             options={{headerShown: false}}
           />
         </Stack.Navigator>

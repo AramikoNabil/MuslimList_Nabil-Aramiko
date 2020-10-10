@@ -48,10 +48,10 @@ class Login extends React.Component {
           <View>
             <TouchableOpacity
               style={styles.button}
-              onPress={() => this.props.navigation.navigate('Login')}>
+              onPress={() => this.props.navigation.navigate('RootDrawer')}>
               <Text
                 style={styles.buttonText}
-                onPress={() => this.props.navigation.navigate('Login')}>
+                onPress={() => this.props.navigation.navigate('RootDrawer')}>
                 Log In
               </Text>
             </TouchableOpacity>

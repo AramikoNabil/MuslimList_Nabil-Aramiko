@@ -10,7 +10,6 @@ import {
 } from 'react-native';
 import {styles} from '../styles/Registration/Registration';
 import iconBack from '../assets/icon/arrow-left.png';
-import flag from '../assets/icon/indonesia.png';
 import eyeIcon from '../assets/icon/Shape.png';
 
 class Registration extends React.Component {
@@ -105,12 +104,14 @@ class Registration extends React.Component {
             </TouchableOpacity>
           </View>
           <View>
-            <Text style={styles.fontloginAnother}>
-              Don't have an account ?{' '}
-              <Text
-                style={styles.textSignUp}
-                onPress={() => this.props.navigation.navigate('Registration')}>
-                Sign Up
+            <Text style={styles.fontTermofuse}>
+              By clicking sign up you are agreeing to the{'          '}
+              <Text style={styles.textSignUp}>
+                {'   '}
+                Term of use{' '}
+                <Text style={styles.fontTermofuse}>
+                  and the <Text style={styles.textSignUp}>Privacy policy</Text>
+                </Text>
               </Text>
             </Text>
           </View>
