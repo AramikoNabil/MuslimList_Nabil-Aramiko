@@ -1,6 +1,7 @@
 import React from 'react';
 import {View, Text, Image, TouchableOpacity, ScrollView} from 'react-native';
 import {createDrawerNavigator} from '@react-navigation/drawer';
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Homepage from './Homepage';
 import Avatar from '../assets/icon/ava.png';
 import starIcon from '../assets/icon/star.png';
@@ -8,11 +9,21 @@ import locateIcon from '../assets/icon/bookmark.png';
 import {styles} from '../styles/DrawContents/DrawContets';
 
 const Drawer = createDrawerNavigator();
+const Tab = createBottomTabNavigator();
+
+const MyTabs = () => {
+  return (
+    <Tab.Navigator>
+      <Tab.Screen name="Home" component={Homepage} />
+      {/* <Tab.Screen name="Settings" component={SettingsScreen} /> */}
+    </Tab.Navigator>
+  );
+};
 
 const RootDrawer = () => {
   return (
     <Drawer.Navigator drawerContent={() => <DrawerContent />}>
-      <Drawer.Screen name="Homepage" component={Homepage} />
+      <Drawer.Screen name="Homepage" component={MyTabs} />
     </Drawer.Navigator>
   );
 };

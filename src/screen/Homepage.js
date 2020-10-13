@@ -99,9 +99,11 @@ class Homepage extends React.Component {
             <Image style={styles.cekIcon} source={cekIcon} />
             <Image style={styles.trashIcon} source={trash} />
           </View>
-          <View style={styles.plusButton}>
-            <Image source={plusButton} />
-          </View>
+          <TouchableOpacity>
+            <View style={styles.plusButton}>
+              <Image source={plusButton} />
+            </View>
+          </TouchableOpacity>
         </View>
       </ScrollView>
     );
