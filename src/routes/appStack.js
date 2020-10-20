@@ -8,6 +8,7 @@ import ResetPassword from '../screen/ResetPassword';
 import Registration from '../screen/Registration';
 import Homepage from '../screen/Homepage';
 import RootDrawer from '../screen/DrawerContents';
+import Todo from '../screen/Todo';
 
 const Stack = createStackNavigator();
 
