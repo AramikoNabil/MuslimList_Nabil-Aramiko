@@ -45,6 +45,16 @@ const DrawerContent = () => {
             </Text>
           </Text>
         </View>
+        <View style={styles.User}>
+          <Text style={styles.Name}>Win Temasmiko</Text>
+          <Text style={styles.username}>@username</Text>
+          <Text style={styles.font1}>
+            202 <Text style={styles.font2}>Followers </Text>
+            <Text style={styles.font1}>
+              202 <Text style={styles.font2}>Followers</Text>
+            </Text>
+          </Text>
+        </View>
         <View style={styles.BodyIcon}>
           <Image source={starIcon} style={styles.Icon} />
           <Text style={styles.fontPopular}>Popular</Text>
